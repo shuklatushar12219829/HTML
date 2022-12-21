@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 {
+    grid-area: where;
+}
+.item2 {
+     grid-area: when;
+}
+.item3 {
+    grid-area: what;
+}
+.item4 {
+     grid-area: which;
+}
+.item5 {
+    grid-area: whom;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'where where where where where where'
+    'when when when what what what'
+    'which which which whom whom whom';
+}
+.grid-container> div {
+    background-color: pink;
+    text-align: center;
+    padding:20px;
+    font-size:large;
+    border: 10px solid purple;
+}</style>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="item1">where</div>
+        <div class="item2">when</div>
+        <div class="item3">what</div>
+        <div class="item4">which</div>
+        <div class="item5">whom</div> 
+        </div>
+</body>
+</html>
